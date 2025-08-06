@@ -1,37 +1,27 @@
-// A simple Node.js web server to serve a single HTML page.
+// A simple Express.js web server to serve a single HTML page.
 
 // 1. Import required modules
-const http = require("http"); // To create the server
-const fs = require("fs"); // To read files from the system
-const path = require("path"); // To handle file paths correctly
+const express = require("express");
+const path = require("path");
 
-// 2. Define server configuration
-const hostname = "localhost"; // Listen on all available network interfaces
-const port = 7002; // The port the server will run on (UPDATED)
+// 2. Initialize the Express app
+const app = express();
 
-// 3. Define the path to your HTML file
-const filePath = path.join(__dirname, "index.html");
+// 3. Define server configuration
+const port = 7002;
 
-// 4. Create the HTTP server
-const server = http.createServer((req, res) => {
-  // Read the index.html file from the disk
-  fs.readFile(filePath, (err, data) => {
-    if (err) {
-      // If there's an error (e.g., file not found), send a 500 response
-      res.writeHead(500, { "Content-Type": "text/plain" });
-      res.end("Error loading index.html");
-      console.error(`Error reading file: ${err}`);
-      return;
-    }
+// 4. Serve static files
+// This tells Express to serve any files from the current directory (where your index.html is)
+app.use(express.static(__dirname));
 
-    // If the file is read successfully, send it to the client
-    res.writeHead(200, { "Content-Type": "text/html" });
-    res.end(data);
-  });
+// 5. Define the main route
+// When someone visits the root URL ('/'), send them the index.html file.
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
-// 5. Start the server and listen for requests
-server.listen(port, hostname, () => {
-  console.log(`✅ Server is running successfully!`);
+// 6. Start the server and listen for requests
+app.listen(port, () => {
+  console.log(`✅ Express server is running successfully!`);
   console.log(`Navigate to http://localhost:${port} in your browser.`);
 });
