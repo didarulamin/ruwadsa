@@ -15,7 +15,7 @@ services:
     # Map port 80 on the host machine (your server) to port 3007
     # inside the container. This lets users access the site without a port number.
     ports:
-      - "80:3007"
+      - "80:7001"
     # Set a restart policy. 'unless-stopped' ensures the container
     # restarts automatically if it crashes or the server reboots.
     restart: unless-stopped
