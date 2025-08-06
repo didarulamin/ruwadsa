@@ -6,8 +6,8 @@ const fs = require("fs"); // To read files from the system
 const path = require("path"); // To handle file paths correctly
 
 // 2. Define server configuration
-const hostname = "0.0.0.0"; // Listen on all available network interfaces
-const port = 3007; // The port the server will run on (UPDATED)
+const hostname = "localhost"; // Listen on all available network interfaces
+const port = 7002; // The port the server will run on (UPDATED)
 
 // 3. Define the path to your HTML file
 const filePath = path.join(__dirname, "index.html");
