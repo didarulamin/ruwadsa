@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruwad Group | Pioneering Medical Supply Innovation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2940&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .section-title {
+            font-size: 2.25rem; /* 36px */
+            font-weight: 800;
+            line-height: 2.5rem; /* 40px */
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .section-subtitle {
+            font-size: 1.125rem; /* 18px */
+            text-align: center;
+            color: #6B7280; /* gray-500 */
+            max-width: 60ch;
+            margin: 0 auto 3rem auto;
+        }
+        .brand-color {
+            color: #2DD4BF; /* teal-400 */
+        }
+        .brand-bg {
+            background-color: #2DD4BF; /* teal-400 */
+        }
+        .brand-border {
+            border-color: #2DD4BF; /* teal-400 */
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="https://github.com/didarulamin/ruwadsa/blob/main/english.png?raw=true" alt="Ruwad Group Logo" class="h-20 w-auto">
+                <span class="text-2xl font-bold text-gray-800">Ruwad Group</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#about" class="text-gray-600 hover:brand-color transition-colors">About Us</a>
+                <a href="#services" class="text-gray-600 hover:brand-color transition-colors">Services</a>
+                <a href="#clients" class="text-gray-600 hover:brand-color transition-colors">Clients</a>
+                <a href="#contact" class="text-gray-600 hover:brand-color transition-colors">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-600 hover:brand-color">About Us</a>
+            <a href="#services" class="block py-2 text-gray-600 hover:brand-color">Services</a>
+            <a href="#clients" class="block py-2 text-gray-600 hover:brand-color">Clients</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:brand-color">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white">
+            <div class="bg-black bg-opacity-60 min-h-[60vh] flex items-center">
+                <div class="container mx-auto px-6 text-center">
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Pioneering Medical Supply Innovation</h1>
+                    <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Manufacturing Leadership in Saudi Arabia. Delivering innovative, high-quality medical products that enhance patient care.</p>
+                    <a href="#contact" class="brand-bg hover:bg-teal-500 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Your Trusted Partner in Healthcare</h2>
+                <p class="section-subtitle">Established in 2019, Ruwad has quickly grown into a privately-owned manufacturing leader in the medical supplies and equipment industry, strategically located in Jeddah's Industrial City.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <i data-lucide="calendar" class="w-12 h-12 mx-auto mb-4 brand-color"></i>
+                        <h3 class="text-xl font-bold mb-2">Established in 2019</h3>
+                        <p class="text-gray-600">A promising enterprise driven by a team with over 20 years of experience.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <i data-lucide="shield" class="w-12 h-12 mx-auto mb-4 brand-color"></i>
+                        <h3 class="text-xl font-bold mb-2">Private Ownership</h3>
+                        <p class="text-gray-600">Ensuring agile decision-making and strategic flexibility.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <i data-lucide="microscope" class="w-12 h-12 mx-auto mb-4 brand-color"></i>
+                        <h3 class="text-xl font-bold mb-2">Medical Industry Focus</h3>
+                        <p class="text-gray-600">Specializing in supplies & equipment manufacturing.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <i data-lucide="map-pin" class="w-12 h-12 mx-auto mb-4 brand-color"></i>
+                        <h3 class="text-xl font-bold mb-2">Located in Jeddah</h3>
+                        <p class="text-gray-600">Based in the strategic hub of Industrial City (Modon 3).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision & Mission Section -->
+        <section id="vision-mission" class="py-20">
+            <div class="container mx-auto px-6">
+                 <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-center md:text-left">
+                        <h3 class="text-3xl font-bold mb-4">Our <span class="brand-color">Vision</span></h3>
+                        <p class="text-lg text-gray-600">To become a leading force in the healthcare manufacturing industry by delivering innovative, high-quality medical products that enhance patient care across the region and beyond.</p>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-3xl font-bold mb-4">Our <span class="brand-color">Mission</span></h3>
+                        <p class="text-lg text-gray-600">To manufacture and supply safe, effective, and compliant medical solutions by leveraging advanced technologies and distribution expertise—ensuring superior value and support to healthcare providers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Our Integrated Business Model</h2>
+                <p class="section-subtitle">We leverage a robust dual-pillar business model, combining specialized OEM services with comprehensive distribution capabilities to maximize market reach and value delivery.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <i data-lucide="factory" class="w-12 h-12 mb-4 brand-color"></i>
+                        <h3 class="text-2xl font-bold mb-3">Specialized Manufacturing</h3>
+                        <p class="text-gray-600">Offering OEM and private labeling for general medical disposables, surgical kits, and hospital equipment.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <i data-lucide="package-check" class="w-12 h-12 mb-4 brand-color"></i>
+                        <h3 class="text-2xl font-bold mb-3">Repacking</h3>
+                        <p class="text-gray-600">Efficient and compliant medical product repacking services to meet specific market needs.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <i data-lucide="shield-check" class="w-12 h-12 mb-4 brand-color"></i>
+                        <h3 class="text-2xl font-bold mb-3">Sterilization</h3>
+                        <p class="text-gray-600">Advanced Ethylene Oxide (EtO) and E-beam sterilization, ensuring the highest standards of safety.</p>
+                    </div>
+                     <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <i data-lucide="truck" class="w-12 h-12 mb-4 brand-color"></i>
+                        <h3 class="text-2xl font-bold mb-3">Distribution</h3>
+                        <p class="text-gray-600">Wide market reach, serving both government and private healthcare sectors across the Kingdom.</p>
+                    </div>
+                     <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <i data-lucide="boxes" class="w-12 h-12 mb-4 brand-color"></i>
+                        <h3 class="text-2xl font-bold mb-3">Diverse Product Portfolio</h3>
+                        <p class="text-gray-600">Sourcing and supplying a comprehensive range of products from trusted local and international vendors.</p>
+                    </div>
+                     <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <i data-lucide="globe" class="w-12 h-12 mb-4 brand-color"></i>
+                        <h3 class="text-2xl font-bold mb-3">Total Market Coverage</h3>
+                        <p class="text-gray-600">100% coverage of government hospitals, private hospitals, and polyclinics throughout Saudi Arabia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Commitment to Quality & Safety</h2>
+                <p class="section-subtitle">We demonstrate an unwavering commitment to quality and safety through adherence to stringent international certifications, ensuring product excellence and regulatory compliance.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+                    <div class="flex flex-col items-center">
+                        <div class="bg-teal-100 p-5 rounded-full mb-4">
+                           <i data-lucide="award" class="w-10 h-10 brand-color"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">ISO 13485</h3>
+                        <p class="text-gray-600">Medical Devices Quality Management</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-teal-100 p-5 rounded-full mb-4">
+                           <i data-lucide="badge-check" class="w-10 h-10 brand-color"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">CE Marking</h3>
+                        <p class="text-gray-600">European Health & Safety Compliance</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-teal-100 p-5 rounded-full mb-4">
+                            <i data-lucide="shield-plus" class="w-10 h-10 brand-color"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">SFDA Approval</h3>
+                        <p class="text-gray-600">Saudi Food and Drug Authority</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section id="clients" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Our Valued Partners</h2>
+                <p class="section-subtitle">We have secured key partnerships with leading entities in both government and private healthcare sectors, demonstrating broad market trust and reach.</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                    <div class="text-center p-4 bg-white rounded-lg shadow-md">
+                        <p class="font-bold text-lg">NUPCO</p>
+                    </div>
+                    <div class="text-center p-4 bg-white rounded-lg shadow-md">
+                        <p class="font-bold text-lg">KFSHRC</p>
+                    </div>
+                    <div class="text-center p-4 bg-white rounded-lg shadow-md">
+                        <p class="font-bold text-lg">Etimad</p>
+                    </div>
+                    <div class="text-center p-4 bg-white rounded-lg shadow-md">
+                        <p class="font-bold text-lg">Ministry of National Guard</p>
+                    </div>
+                    <div class="text-center p-4 bg-white rounded-lg shadow-md">
+                        <p class="font-bold text-lg">Dr. Suliman Faqeeh Hospital</p>
+                    </div>
+                    <div class="text-center p-4 bg-white rounded-lg shadow-md">
+                        <p class="font-bold text-lg">Dallah Hospital</p>
+                    </div>
+                    <div class="text-center p-4 bg-white rounded-lg shadow-md">
+                        <p class="font-bold text-lg">Dr. Sulaiman Al Habib</p>
+                    </div>
+                    <div class="text-center p-4 bg-white rounded-lg shadow-md">
+                        <p class="font-bold text-lg">Kingdom Hospital</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-800 text-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4">Connect With Us</h2>
+                        <p class="text-gray-300 mb-6">Connect with Ruwad through our dedicated channels for inquiries, partnerships, and to explore our comprehensive medical solutions.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <i data-lucide="mail" class="w-6 h-6 brand-color"></i>
+                                <a href="mailto:info@ruwadsa.com" class="hover:text-teal-300">info@ruwadsa.com</a>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <i data-lucide="map-pin" class="w-6 h-6 brand-color"></i>
+                                <span>Jeddah - Industrial City (Modon 3), Saudi Arabia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- REVERTED FORM TAG -->
+                        <form id="contact-form" action="https://formspree.io/f/xdkdwjog" method="POST" class="bg-white text-gray-800 p-8 rounded-lg shadow-lg">
+                            <div id="form-message" class="hidden mb-4 p-3 rounded-md"></div>
+                            <div class="mb-4">
+                                <label for="name" class="block text-sm font-medium mb-1">Name</label>
+                                <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:brand-border">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                                <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:brand-border">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-sm font-medium mb-1">Message</label>
+                                <textarea id="message" name="message" rows="4" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:brand-border"></textarea>
+                            </div>
+                            <button type="submit" class="w-full brand-bg hover:bg-teal-500 text-white font-bold py-3 px-6 rounded-md transition-colors">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Ruwad Group. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // REVERTED Contact form submission script for Formspree
+        const contactForm = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const form = e.target;
+            const data = new FormData(form);
+            const submitButton = form.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.innerHTML;
+            submitButton.innerHTML = 'Sending...';
+            submitButton.disabled = true;
+
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    formMessage.textContent = 'Thank you for your message. We will get back to you shortly.';
+                    formMessage.classList.remove('hidden', 'bg-red-200', 'text-red-800');
+                    formMessage.classList.add('bg-green-200', 'text-green-800');
+                    form.reset();
+                } else {
+                    const responseData = await response.json();
+                    if (Object.hasOwn(responseData, 'errors')) {
+                        formMessage.textContent = responseData["errors"].map(error => error["message"]).join(", ");
+                    } else {
+                        formMessage.textContent = 'Oops! There was a problem submitting your form.';
+                    }
+                    formMessage.classList.remove('hidden', 'bg-green-200', 'text-green-800');
+                    formMessage.classList.add('bg-red-200', 'text-red-800');
+                }
+            } catch (error) {
+                formMessage.textContent = 'Oops! There was a problem submitting your form. Please check your network connection.';
+                formMessage.classList.remove('hidden', 'bg-green-200', 'text-green-800');
+                formMessage.classList.add('bg-red-200', 'text-red-800');
+            } finally {
+                formMessage.classList.remove('hidden');
+                submitButton.innerHTML = originalButtonText;
+                submitButton.disabled = false;
+                setTimeout(() => {
+                    formMessage.classList.add('hidden');
+                }, 5000);
+            }
+        });
+    </script>
+</body>
+</html>
