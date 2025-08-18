@@ -44,14 +44,7 @@
         .brand-border {
             border-color: #2DD4BF; /* teal-400 */
         }
-        /* Custom styles for Slick slider */
-        .slick-dots li.slick-active button:before {
-            color: #2DD4BF !important;
-            opacity: 1;
-        }
-        .slick-dots li button:before {
-            font-size: 10px;
-        }
+        /* Custom styles for Slick slider arrows */
         .slick-prev:before, .slick-next:before {
             color: #2DD4BF !important;
             font-size: 28px;
@@ -331,12 +324,12 @@
         // Initialize Slick Slider
         $(document).ready(function(){
             $('.certification-slider').slick({
-                dots: true,
+                dots: false, // Dots removed
                 infinite: true,
                 speed: 500,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                autoplay: true,
+                autoplay: true, // Autoplay is enabled
                 autoplaySpeed: 3000,
                 arrows: true
             });
