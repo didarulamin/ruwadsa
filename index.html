@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -17,11 +19,6 @@
         .hero-bg {
             background-image: url('https://github.com/didarulamin/ruwadsa/blob/main/img/img1.jpeg?raw=true');
             background-size: cover;
-            background-position: center;
-        }
-        .banner{
-            background-image: url('https://github.com/didarulamin/ruwadsa/blob/main/img/img2.jpeg?raw=true');
-            background-position: center; background-size: cover;
             background-position: center;
         }
         .section-title {
@@ -47,6 +44,24 @@
         .brand-border {
             border-color: #2DD4BF; /* teal-400 */
         }
+        /* Custom styles for Slick slider */
+        .slick-dots li.slick-active button:before {
+            color: #2DD4BF !important;
+            opacity: 1;
+        }
+        .slick-dots li button:before {
+            font-size: 10px;
+        }
+        .slick-prev:before, .slick-next:before {
+            color: #2DD4BF !important;
+            font-size: 28px;
+        }
+        .slick-prev {
+            left: -35px;
+        }
+        .slick-next {
+            right: -35px;
+        }
     </style>
 </head>
 <body class="bg-white text-gray-800">
@@ -55,7 +70,7 @@
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
                 <img src="https://github.com/didarulamin/ruwadsa/blob/main/english.png?raw=true" alt="Ruwad Group Logo" class="h-20 w-auto">
-                </div>
+            </div>
             <div class="hidden md:flex items-center space-x-6">
                 <a href="#about" class="text-gray-600 hover:brand-color transition-colors">About Us</a>
                 <a href="#services" class="text-gray-600 hover:brand-color transition-colors">Services</a>
@@ -177,9 +192,21 @@
                 <h2 class="section-title">Commitment to Quality & Safety</h2>
                 <p class="section-subtitle">We demonstrate an unwavering commitment to quality and safety through adherence to stringent international certifications, ensuring product excellence and regulatory compliance.</p>
                 
-                <div class="mb-12 banner">
-                    <img src="https://github.com/didarulamin/ruwadsa/blob/main/img/img2.png?raw=true" alt="Ruwad Quality Commitment Banner" class="w-full h-auto rounded-lg shadow-lg mx-auto">
+                <div class="certification-slider max-w-4xl mx-auto mb-12 shadow-lg rounded-lg">
+                    <div>
+                        <img src="https://github.com/didarulamin/ruwadsa/blob/main/img/img2.png?raw=true" alt="Ruwad Quality Commitment Banner 1" class="w-full h-auto object-cover rounded-lg">
+                    </div>
+                    <div>
+                        <img src="https://github.com/didarulamin/ruwadsa/blob/main/img/img3.jpeg?raw=true" alt="Ruwad Quality Commitment Banner 2" class="w-full h-auto object-cover rounded-lg">
+                    </div>
+                    <div>
+                        <img src="https://github.com/didarulamin/ruwadsa/blob/main/img/img4.jpeg?raw=true" alt="Ruwad Quality Commitment Banner 3" class="w-full h-auto object-cover rounded-lg">
+                    </div>
+                    <div>
+                        <img src="https://github.com/didarulamin/ruwadsa/blob/main/img/img5.jpeg?raw=true" alt="Ruwad Quality Commitment Banner 4" class="w-full h-auto object-cover rounded-lg">
+                    </div>
                 </div>
+
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
                     <div class="flex flex-col items-center">
                         <div class="bg-teal-100 p-5 rounded-full mb-4">
@@ -287,6 +314,9 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
@@ -298,7 +328,21 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // REVERTED Contact form submission script for Formspree
+        // Initialize Slick Slider
+        $(document).ready(function(){
+            $('.certification-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: true
+            });
+        });
+
+        // Contact form submission script for Formspree
         const contactForm = document.getElementById('contact-form');
         const formMessage = document.getElementById('form-message');
 
